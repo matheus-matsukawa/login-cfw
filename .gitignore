@@ -5,3 +5,4 @@ jaasauth.key.pub
 key
 index.js
 .vscode/
+src/mock/
