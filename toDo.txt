@@ -1,0 +1,31 @@
+Coisas para fazer:
+
+CONCLUÍDO - Criar um fake front-end(um arquivo com info), passando um login válido e outro inválido(json - name , password) - Insomnia
+
+CONCLUÍDO - Criar o mock com basicamente mesma estrutura do fake front-end, contendo um login válido e outro inválido(possuindo um json com array de obj.  - name, password)
+
+- Criar a Rota de Login - (Otávio) 
+    - Implementar Verificação de Token
+    - O Token irá possuir dentro dele o name e password
+
+    (Arquivos:  /service/login.ts  ,  /routes/loginRoute.ts )
+
+
+- Criar a escrita e a leitura do Mock - (Matheus)
+    (Arquivos: /utils/readMock, /utils/writeMock)
+
+- Criar uma Rota para Criar o Token - (Felipe)
+    - Receber os dados como json
+    - Nele tem que possuir o name e password
+
+    (Arquivos: /service/createToken , /routes/createTokenRoute) (o route createTokenRoute é apenas para teste)
+
+
+    
+
+
+-------- Segunda Tarefa --------------
+
+- Escrever dados no Mock pra criar usuários
+
+- Criar a Rota de Sign up - Cadastrar 
