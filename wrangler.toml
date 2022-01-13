@@ -1,0 +1,13 @@
+name = ""
+type = "javascript"
+account_id = ""
+workers_dev = true
+
+[env.staging]
+name = ""
+[env.staging.vars]
+
+
+[env.production]
+name = ""
+[env.production.vars]
