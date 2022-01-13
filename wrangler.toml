@@ -1,13 +1,13 @@
-name = ""
+name = "aa"
 type = "javascript"
-account_id = ""
+account_id = "a"
 workers_dev = true
 
 [env.staging]
-name = ""
+name = "bb"
 [env.staging.vars]
 
 
 [env.production]
-name = ""
+name = "cc"
 [env.production.vars]
