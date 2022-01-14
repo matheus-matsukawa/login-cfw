@@ -1,6 +1,7 @@
 import { User } from "../dtos"
 import { jsonResponse } from "../utils"
-import { login } from "../services"
+import { loginService } from "../services"
+import { createToken } from "../utils/createToken"
 
 const db = [
   {
@@ -35,11 +36,10 @@ export async function loginRoute(event: any) {
       }
 
       const token = {
-        token: "efjejdkvmdkmv",
-        expiration: "1d"
+        token: await createToken({ name: bodyReq.name })
       }
 
-      const res = await login(token, 200)
+      const res = await loginService(token, 200)
 
       return jsonResponse({ body: res.body, status: res.status })
     } catch (err: any) {
