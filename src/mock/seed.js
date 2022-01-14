@@ -1,5 +1,5 @@
 const fetch = require("node-fetch")
-const db = require("./data")
+const db = require("./userData")
 
 async function seed(body) {
   await fetch(
