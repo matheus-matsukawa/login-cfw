@@ -6,7 +6,7 @@ export async function testeRoute(event: any) {
     try {
       const params = getParams(event.request.url) //exemplo de como pegar os parametros da url caso necessário
       const body = await event.request.json() //exemplo de como se pega o body
-      const res = await teste()
+      const res = await teste(body)
       return jsonResponse({ body: res.body, status: res.status }) //exemplo de retorno de conteúdo e status
     } catch (err: any) {
       return jsonResponse({ body: err.message, status: 404 }) //exemplo de tratamento

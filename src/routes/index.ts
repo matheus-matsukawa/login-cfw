@@ -2,8 +2,8 @@ import { testeRoute } from "./testeRoute"
 import { createTokenRoute } from "./createTokenRoute"
 import { loginRoute } from "./loginRoute"
 import { createUserRoute } from "./createUserRoute"
-import { readUserRoute } from "./readUserRoute"
-import { updateUserRoute } from "./updateUserRoute"
+// import { readUserRoute } from "./readUserRoute"
+// import { updateUserRoute } from "./updateUserRoute"
 import { deleteUserRoute } from "./deleteUserRoute"
 
 export const routes: any = {
@@ -11,7 +11,7 @@ export const routes: any = {
   "/createtoken": createTokenRoute,
   "/login": loginRoute,
   "/create": createUserRoute,
-  "/read": readUserRoute,
-  "/update": updateUserRoute,
+  // "/read": readUserRoute,
+  // "/update": updateUserRoute,
   "/delete": deleteUserRoute
 }
