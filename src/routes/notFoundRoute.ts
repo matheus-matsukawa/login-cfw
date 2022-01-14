@@ -48,3 +48,5 @@ export async function notFoundRoute(event: FetchEvent) {
 
   return response
 }
+
+

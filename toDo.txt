@@ -4,17 +4,17 @@ CONCLUÍDO - Criar um fake front-end(um arquivo com info), passando um login vá
 
 CONCLUÍDO - Criar o mock com basicamente mesma estrutura do fake front-end, contendo um login válido e outro inválido(possuindo um json com array de obj.  - name, password)
 
-- Criar a Rota de Login - (Otávio) 
-    - Implementar Verificação de Token
-    - O Token irá possuir dentro dele o name e password
+CONCLUÍDO - Criar a Rota de Login - (Otávio) 
+    - Implementar Criação de Token
+    - O Token irá possuir dentro dele o name
 
     (Arquivos:  /service/login.ts  ,  /routes/loginRoute.ts )
 
 
-- Criar a escrita e a leitura do Mock - (Matheus)
+CONCLUÍDO - Criar a escrita e a leitura do Mock - (Matheus)
     (Arquivos: /utils/readMock, /utils/writeMock)
 
-- Criar uma Rota para Criar o Token - (Felipe)
+CONCLUÍDO - Criar uma Rota para Criar o Token - (Felipe)
     - Receber os dados como json
     - Nele tem que possuir o name e password
 
@@ -26,6 +26,15 @@ CONCLUÍDO - Criar o mock com basicamente mesma estrutura do fake front-end, con
 
 -------- Segunda Tarefa --------------
 
-- Escrever dados no Mock pra criar usuários
+CONCLUÍDO - Escrever dados no Mock pra criar usuários
 
-- Criar a Rota de Sign up - Cadastrar 
+- Criar CRUD 
+
+- Criar a Rota de Sign up - Cadastrar (Create - CRUD) - Felipe
+
+- Buscar o mock no wasabi utilizando KV pra validar o usuário (login) (READ - CRUD) - Otávio
+
+- Modificar senha (Update - CRUD) - Otávio
+
+- Deletar usuário (Delete - CRUD) - Matheus
+
