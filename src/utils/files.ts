@@ -28,4 +28,15 @@ export const files = (req: string, user: User) => {
       return userFromDb
     })
   }
+  else if(req === "ADD-USER") {
+    return (() => {
+      const userFromDb = db.users.filter((elem) => elem.name === user.name)[0]
+      if(userFromDb) throw "Username already in use"
+      
+      db.users.push(user)
+      return user
+    })
+  }
+
+  throw "not allowed method"
 }
