@@ -7,7 +7,7 @@ export const deleteUserRoute = async (event: FetchEvent) => {
   }
 
   try {
-    return deleteUser(event)
+    return await deleteUser(event)
   } catch (e) {
     return jsonResponse({ body: e, status: 400 })
   }
