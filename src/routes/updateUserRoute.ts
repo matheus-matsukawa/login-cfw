@@ -8,9 +8,9 @@ export const updateUserRoute = async (event: any) => {
         url: event.request.url
       })
 
-      console.log('name', params);
-      
-      return await updateUser(params)
+      const bodyReq = await event.request.json()
+
+      return await updateUser(params, bodyReq)
     } catch (err: any) {
       return jsonResponse({ body: err.message, status: 404 })
     }
