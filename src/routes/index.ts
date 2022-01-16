@@ -16,7 +16,7 @@ export const routes: any = {
 
 /* 
 USERS
-create user: POST para /users (JÁ EXISTE/ATUALIZAR) - Felipe
+CONCLUÍDO - create user: POST para /users (JÁ EXISTE/ATUALIZAR) - Felipe
   Verificar dados obrigatórios
   Verificar validade dos dados(email único)
 
