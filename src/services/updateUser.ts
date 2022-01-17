@@ -5,9 +5,7 @@ export const updateUser = async (params: any, bodyReq: User) => {
   try {
     const db = await kvSimulationGet()
 
-    const userFound: User = db.users.find(
-      (user: User) => user.name === params.name
-    )
+    const userFound: User = db.users.find((user: User) => user.id === params.id)
 
     userFound.password = bodyReq.password
     await kvSimulationPut(db)
